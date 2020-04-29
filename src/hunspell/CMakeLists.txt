@@ -28,4 +28,8 @@ set(SRC
     phonet.cxx
     suggestmgr.cxx)
 
+add_compile_options("-DBUILDING_LIBHUNSPELL")
 add_library(hunspell SHARED ${SRC})
+target_include_directories(hunspell PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+set_target_properties(hunspell PROPERTIES PUBLIC_HEADER "hunspell.hxx;hunspell.h")
+install(TARGETS hunspell)
