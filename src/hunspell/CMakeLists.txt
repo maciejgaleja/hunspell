@@ -1,0 +1,31 @@
+set(SRC
+    affixmgr.cxx
+    csutil.cxx
+    hashmgr.cxx
+    hunspell.h
+    hunzip.cxx
+    phonet.hxx
+    suggestmgr.hxx
+    affixmgr.hxx
+    csutil.hxx
+    hashmgr.hxx
+    hunspell.hxx
+    hunzip.hxx
+    replist.cxx
+    utf_info.hxx
+    affentry.cxx
+    atypes.hxx
+    filemgr.cxx
+    htypes.hxx
+    hunvisapi.h
+    langnum.hxx
+    replist.hxx
+    w_char.hxx
+    affentry.hxx
+    baseaffix.hxx
+    filemgr.hxx
+    hunspell.cxx
+    phonet.cxx
+    suggestmgr.cxx)
+
+add_library(hunspell SHARED ${SRC})
